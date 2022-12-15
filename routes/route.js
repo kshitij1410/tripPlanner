@@ -1,7 +1,6 @@
 import express from "express";
 import { authenticateToken } from "../controller/jwt-controller.js";
 import {
-    addTripInfo,
   addcustomizeEntity,
   deletecustomizeEntity,
   deleteItinerary,
@@ -17,8 +16,7 @@ const router = express.Router();
 // Create the search endpoint
 router.get("/search", searchTrip);
 
-//add dummy data
-router.post("/addTripInfo",addTripInfo);
+
 
 // Create the customize endpoint
 router.post("/customize/:id", addcustomizeEntity);
