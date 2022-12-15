@@ -5,7 +5,8 @@ const tripPlannerSchema = new mongoose.Schema({
     destination: String,
     type: String,
     duration: Number,
-    activities: [String]
+    activities: [String],
+    userId:String
   });
 
   
